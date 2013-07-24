@@ -5,12 +5,12 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 /**
  * Handles the BMI.
  *
- * @author Jim Martens
- * @copyright 2012 Jim Martens
- * @license http://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
- * @package de.plugins-zum-selberbauen.bmi
- * @subpackage system.event.listener
- * @category Community Framework
+ * @author		Jim Martens
+ * @copyright	2013 Jim Martens
+ * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
+ * @package		de.plugins-zum-selberbauen.bmi
+ * @subpackage	system.event.listener
+ * @category	Community Framework
 */
 class BMIListener implements EventListener {
 	/**
@@ -23,6 +23,8 @@ class BMIListener implements EventListener {
 
 	/**
 	 * Updates the BMI.
+	 * 
+	 * @param	RegisterForm|UserProfileEditForm	$eventObj
 	 */
 	protected function updateBMI($eventObj) {
 		$height = $eventObj->activeOptions['height']['optionValue'];
@@ -35,9 +37,9 @@ class BMIListener implements EventListener {
 	/**
 	 * Calculates the BMI.
 	 * 
-	 * @param integer	$height
-	 * @param integer	$weight
-	 * @return float
+	 * @param	integer	$height
+	 * @param	integer	$weight
+	 * @return	float
 	 */
 	protected function calculateBMI($height, $weight) {
 		$heightToMeter = ((float) $height) / 100;
