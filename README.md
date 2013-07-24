@@ -8,7 +8,7 @@ which is then displayed in the message sidebar under the avatar of the specific 
 Version notes
 -------------
 
-The currently available source code represents an early alpha version of Size-Weight-BMI and should not be used in productive environments.
+The currently available source code represents an early beta version of Size-Weight-BMI and should not be used in productive environments.
 
 License
 -------

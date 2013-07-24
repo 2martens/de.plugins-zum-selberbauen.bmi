@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd">
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.height"><![CDATA[Körpergröße]]></item>
+		<item name="wcf.user.option.height.description"><![CDATA[Geben Sie hier bitte Ihre Körpergröße in cm ein.]]></item>
+		<item name="wcf.user.option.bmi"><![CDATA[BMI]]></item>
+		<item name="wcf.user.option.weight"><![CDATA[Körpergewicht]]></item>
+		<item name="wcf.user.option.weight.description"><![CDATA[Geben Sie hier bitte Ihr Körpergewicht in kg an.]]></item>
+	</category>
+</language>
