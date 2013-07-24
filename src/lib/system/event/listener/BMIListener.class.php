@@ -1,6 +1,5 @@
 <?php
 //wcf imports
-require_once(WCF_DIR.'lib/data/user/UserEditor.class.php');
 require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 
 /**
@@ -13,12 +12,12 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @subpackage system.event.listener
  * @category Community Framework
 */
-class RegisterNewsletterListener implements EventListener {
+class BMIListener implements EventListener {
 	/**
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName) {
-		if ($className != 'RegisterForm' || $className != 'UserDeleteAction') return;
+		if ($className != 'RegisterForm' && $className != 'UserProfileEditForm') return;
 		$this->updateBMI($eventObj);
 	}
 
