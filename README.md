@@ -3,12 +3,16 @@ Size-Weight-BMI
 
 A plugin that adds two custom profile fields editable upon registration.
 One field is labeled weight and the other size. They are used to calculate the BMI
-which is then displayed in the message sidebar under the avatar of the specific user.
+which is then displayed in the message sidebar under the avatar of the specific user*.
+
+* This does not happen automatically. After installation you have to navigate to System -> Options -> Messages.
+There you will find a selection for all profile fields that shall be displayed in the message sidebar. 
+Select BMI here and it will be shown in the message sidebar.
 
 Version notes
 -------------
 
-The currently available source code represents an early beta version of Size-Weight-BMI and should not be used in productive environments.
+The currently available source code represents a release candidate version of Size-Weight-BMI and can be used in productive environments.
 
 License
 -------
