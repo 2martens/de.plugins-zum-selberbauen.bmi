@@ -7,7 +7,7 @@
 		
 		<standalone>0</standalone>
         <isunique>1</isunique>
-        <version>1.0.0 RC 2</version>
+        <version>1.0.0 RC 3</version>
         <date>2013-07-26</date>
         <plugin>com.woltlab.wcf.page.user.profile</plugin>
 	</packageinformation>
@@ -38,6 +38,10 @@
         <languages languagecode="de">language/de.xml</languages>
         <languages languagecode="de-informal">language/de-informal.xml</languages>
         <languages languagecode="en">language/en.xml</languages>
+    </instructions>
+    
+    <instructions type="update" fromversion="1.0.0 RC 2">
+    	<files>files.tar</files>
     </instructions>
     
     <instructions type="update" fromversion="1.0.0 RC 1">
