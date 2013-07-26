@@ -18,6 +18,7 @@ class BMIListener implements EventListener {
 	 */
 	public function execute($eventObj, $className, $eventName) {
 		if ($className != 'RegisterForm' && $className != 'UserProfileEditForm') return;
+		if ($className == 'UserProfileEditForm' && $eventObj->activeCategory != 'profile') return;
 		$this->updateBMI($eventObj);
 	}
 
