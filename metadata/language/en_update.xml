@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language languagecode="en" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd">
 	<category name="wcf.user.option">
-		<item name="wcf.user.option.height"><![CDATA[Body height]]></item>
-		<item name="wcf.user.option.height.description"><![CDATA[Please insert here your height in cm.]]></item>
-		<item name="wcf.user.option.bmi"><![CDATA[BMI]]></item>
-		<item name="wcf.user.option.weight"><![CDATA[Body weight]]></item>
-		<item name="wcf.user.option.weight.description"><![CDATA[Please insert here your weight in kg.]]></item>
 		<item name="wcf.user.option.error.bmiTooLow"><![CDATA[The calculated BMI is with less than 25 too low.]]></item>
 	</category>
 </language>

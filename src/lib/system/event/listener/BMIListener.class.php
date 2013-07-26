@@ -30,8 +30,26 @@ class BMIListener implements EventListener {
 		$height = $eventObj->activeOptions['height']['optionValue'];
 		$weight = $eventObj->activeOptions['weight']['optionValue'];
 		$bmi = $this->calculateBMI($height, $weight);
-		$eventObj->activeOptions['bmi'] =& $eventObj->cachedOptions['bmi'];
-		$eventObj->activeOptions['bmi']['optionValue'] = $bmi;
+		
+		try {
+			$this->validateBMI($bmi);
+			$eventObj->activeOptions['bmi'] =& $eventObj->cachedOptions['bmi'];
+			$eventObj->activeOptions['bmi']['optionValue'] = $bmi;
+		}
+		catch (UserInputException $uie) {
+			$errorTypes = array(
+				'height' => 'bmiTooLow', 
+				'weight' => 'bmiTooLow'
+			);
+			throw new UserInputException('options', $errorTypes);
+		}
+	}
+	
+	protected function validateBMI($bmi) {
+		$isValidated = $bmi >= 25;
+		if (!$isValidated) {
+			throw new UserInputException('height', 'validationFailed');
+		}
 	}
 	
 	/**
