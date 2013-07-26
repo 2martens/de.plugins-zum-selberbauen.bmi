@@ -6,5 +6,6 @@
 		<item name="wcf.user.option.bmi"><![CDATA[BMI]]></item>
 		<item name="wcf.user.option.weight"><![CDATA[Körpergewicht]]></item>
 		<item name="wcf.user.option.weight.description"><![CDATA[Geben Sie hier bitte Ihr Körpergewicht in kg an.]]></item>
+		<item name="wcf.user.option.error.bmiTooLow"><![CDATA[Der errechnete BMI liegt unter 25 und ist damit zu niedrig.]]></item>
 	</category>
 </language>
